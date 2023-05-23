@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Ajustes</title>
+    <script>
+        function guardarAjustes() {
+            var tamañoLetra = document.getElementById("tamaño-letra").value;
+            var colorLetra = document.getElementById("color-letra").value;
+
+            localStorage.setItem("tamañoLetra", tamañoLetra);
+            localStorage.setItem("colorLetra", colorLetra);
+
+            aplicarAjustes();
+        }
+
+        function cargarAjustes() {
+            var tamañoLetra = localStorage.getItem("tamañoLetra");
+            var colorLetra = localStorage.getItem("colorLetra");
+
+            if (tamañoLetra) {
+                document.getElementById("tamaño-letra").value = tamañoLetra;
+            }
+
+            if (colorLetra) {
+                document.getElementById("color-letra").value = colorLetra;
+            }
+
+            aplicarAjustes();
+        }
+
+        function aplicarAjustes() {
+            var tamañoLetra = document.getElementById("tamaño-letra").value;
+            var colorLetra = document.getElementById("color-letra").value;
+
+            document.body.style.fontSize = tamañoLetra + "px";
+            document.body.style.color = colorLetra;
+        }
+    </script>
+</head>
+<nav>
+    <ul>
+        <li><a href="malaga.html">Principal</a></li>
+        <li id="seleccionado"><a href="sobreMalaga.html">Página de ajustes</a></li>
+        <li><a href="lugaresInteres.html">Lugares de interés</a></li>
+        <li><a href="gastronomia.html">Gastronomía</a></li>
+    </ul>
+</nav>
+
+<body onload="cargarAjustes()">
+    <h1>Ajustes</h1>
+    <h2>Elige el tamaño y el color de la letra que quieras para esta página</h2>
+
+    <form>
+        <label for="tamaño-letra">Tamaño de letra:</label>
+        <input type="number" id="tamaño-letra" min="12" max="36">
+
+        <br>
+
+        <label for="color-letra">Color de letra:</label>
+        <input type="color" id="color-letra">
+
+        <br>
+
+        <button type="button" onclick="guardarAjustes()">Guardar</button>
+    </form>
+    <p>Este texto es un ejemplo para que veas las modificaciones en el tamaño y color de texto</p>
+
+    
+    <script src="javascript.js"></script>
+    <script>
+        mostrarNombreUsuario();
+    </script>
+</body>
+
+</html>

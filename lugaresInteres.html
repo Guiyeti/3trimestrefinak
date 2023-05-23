@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="malaga.html">Principal</a></li>
+            <li><a href="sobreMalaga.html">Página de ajustes</a></li>
+            <li id="seleccionado"><a href="lugaresInteres.html">Lugares de interés</a></li>
+            <li><a href="gastronomia.html">Gastronomía</a></li>
+        </ul>
+    </nav>
+
+  <button class="boton" onclick="abrirModal('alcazaba.jpg')">La Alcazaba</button>
+  <p id="texto">La Alcazaba de Málaga es un palacio fortificado, su nombre proviene del árabe Al – qasba que significa ciudadela. Fue construido entre los siglos XI y XV por los musulmanes. Dentro de este recinto amurallado vivía el gobernador, los altos funcionarios de la ciudad y una guarnición de soldados.La Alcazaba cuenta con varios palacios en su interior que comparten una cierta similitud (aunque a menor menor escala) a los palacios la Alhambra de Granada.  
+
+    Esto se debe al hecho de que Málaga perteneció al Reino de Granada y se encontraba bajo control de la dinastía nazarí. <br> La Alcazaba se construyó en un lugar estratégico, ya que se ubicaba a las faldas del Monte Gibralfaro, desde allí se encontraba conectada con una muralla (La Coracha) hasta lo alto del monte con el Castillo de Gibralfaro.La mayor parte de los que podemos contemplar hoy en la Alcazaba no corresponde a las construcciones iniciales sino a las que se fueron desarrollando a partir del siglo XIII tras las conquista del reino nazarita. Es por ello, que se puede observar la influencia de la tradición en la arquitectura granadina, creando jardines, estanques, decoración muy refinada en la que en los interiores los alarifes crean un juego de luz y sombra dando al espacio un aire místico.
+
+    El recinto de la Alcazaba son aproximadamente 15.000 metros cuadrados en los que alrededor de 7.000 metros están destinado a construcciones militares y civiles. Mientras el resto son espacios donde se encontraban los jardines, silos y mazmorras. </p>
+  
+  <button class="boton" onclick="abrirModal('catedral.jpg')">La Catedral de Málaga</button>
+  <p id="texto">La historia de la Catedral está íntimamente relacionada con la Mezquita Mayor sobre la cual fue construida, emplazada en el interior del recinto amurallado árabe. Su origen se sitúa en 1487, año en el que la ciudad de Málaga fue conquistada por las tropas castellanas. Fue entonces cuando la Mezquita Aljama se convirtió en Catedral, vistiéndose de cristiana con elementos decorativos del gótico tardío y consagrándose bajo la advocación de Santa María de la Encarnación. Dicho misterio teológico nos habla de Dios hecho hombre y de la Encarnación en su Madre como paso esencial para la redención de nuestros pecados. Este mensaje definía de modo claro las intenciones religiosas del nuevo régimen establecido bajo el poder de los Reyes Católicos, muy devotos y seguidores de María en el momento del anuncio del Arcángel San Gabriel.</p>
+  
+  <button class="boton" onclick="abrirModal('teatro.jpg')">El teatro Romano</button>
+  <p id="texto">Málaga tiene su exponente más significativo de la ciudad romana de Malaga en su teatro. Es un edificio lúdico y político, idóneo para la puesta en escena del poder y la jerarquía social. Construido junto al puerto y a los pies de la colina, lo que le ha hecho ser de construcción mixta. Aprovecha parte de la ladera y se levanta una grada artificial que permite la instalación de gradas. Sus dimensiones y características son muy similares a las propuestas por Vitrubio, un modelo clásico muy similar a los de la Bética.
+
+    Fue edificada por Augusto y utilizado como teatro hasta el siglo III. Se destinó a cementerio en el siglo V y VI, y posteriormente surtió con sus materiales la reestructuración de la Alcazaba. Tras permanecer oculto durante siglo, el teatro se descubrió en 1951 y complementa la oferta cultural de Málaga.</p>
+ 
+  <button class="boton" onclick="abrirModal('museo.jpg')">El Museo Picasso</button>
+  <p id="texto">La idea inicial nació en 1953 de los contactos entre el propio Pablo Picasso y Juan Temboury Álvarez, entonces delegado provincial de Bellas Artes de Málaga. El pintor malagueño quería que su obra estuviera presente en su ciudad natal, pero este proyecto quedó frustrado poco después. Christine Ruiz-Picasso, viuda de Paul Ruiz-Picasso, hijo mayor del artista, retomó los contactos con el gobierno de la ciudad de Málaga con motivo de las exposiciones Picasso clásico y Picasso, primera mirada que tuvieron lugar en el Palacio Episcopal de Málaga en 1992 y 1994 respectivamente. Fue tal el entusiasmo que provocó en la ciudadanía malagueña el poder contemplar por vez primera en Andalucía el trabajo de Picasso, que en 1996 Christine Ruiz-Picasso reinicia el proyecto de su suegro de 1953.</p>
+
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <img id="imagen-modal" src="" alt="Imagen Modal">
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+  <script>alert("Nombre: Guillermo Pérez Garcia \nCurso: 1ºDAW \nPincha en el nombre de cada lugar de interés :)");
+</script>
+
+<script src="javascript.js"></script>
+<script>
+    mostrarNombreUsuario();
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    display: flex;
+    justify-content: end;
+    padding-right: 8%;
+    margin-bottom: 0px;
+    box-shadow:0px 1px 10px rgb(0 0 0/0.6);
+    width: auto;
+
+}
+li{
+    display: inline-block;
+    padding: 20px;
+
+}
+li:hover{
+    background-color: rgb(176, 196, 233);
+    font-weight: 600;
+}
+#seleccionado{
+    background-color: rgb(95, 121, 237);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #nombre-usuario {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  #texto{
+    margin:50px;
+    margin-bottom: auto;
+  }
+  .boton{
+    position: absolute;
+    left:50%;
+    margin:20px;
+  }
+  .titulo{
+    text-align: center;
+  }
+  .fotomalaga {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #historiamalaga{
+    margin:50px;
+    margin-bottom: 40px;
+  }
+  .gastronomia{
+    overflow: hidden;
+  }
+  #texto1{
+    float: left;
+    width: 50%;
+    
+  }
+  #texto2{
+    float:right;
+    width: 50%;
+    
+  }
+  .textof{
+    text-align: center;
+    width: 50%;
+  }
+  #sardina{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .textop{
+    text-align: right;
+    width: 75%;
+  }
