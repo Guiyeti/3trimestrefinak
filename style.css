@@ -98,11 +98,13 @@ li:hover{
   #texto2{
     float:right;
     width: 50%;
+    margin-bottom: 60px;
     
   }
   .textof{
     text-align: center;
     width: 50%;
+    
   }
   #sardina{
     display: block;
@@ -113,3 +115,4 @@ li:hover{
     text-align: right;
     width: 75%;
   }
+ 
